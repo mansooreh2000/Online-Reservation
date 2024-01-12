@@ -1,0 +1,25 @@
+<template>
+  <div class="container">
+    <h1>نوبت دهی آنلاین</h1>
+    <form action="/appointment" method="post">
+      <input v-model="name" type="text" placeholder="نام">
+      <input v-model="phone" type="text" placeholder="تلفن">
+      <input v-model="date" type="date" placeholder="تاریخ">
+      <input v-model="time" type="time" placeholder="ساعت">
+      <button type="submit">ارسال</button>
+    </form>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      name: "",
+      phone: "",
+      date: "",
+      time: "",
+    };
+  },
+};
+</script>
